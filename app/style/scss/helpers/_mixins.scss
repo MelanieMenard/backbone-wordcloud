@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------------*/
+/*  Mixins SASS file
+/*  All mixins go there (custom and borrowed from third party libraries)
+/*---------------------------------------------------------------------*/
+
+@mixin sentiment-color() {
+  &.sentiment-neutral {
+    color: $gray;
+  }
+  &.sentiment-positive {
+    color: $green;
+  }
+  &.sentiment-negative {
+    color: $red;
+  }
+}
+

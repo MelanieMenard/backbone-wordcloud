@@ -1,0 +1,18 @@
+/*---------------------------------------------------------------------*/
+/*  Grid settings SASS file
+/*  All the grid related variables go there (eg. breakpoints and widths)
+/*  Guidelines: https://smacss.com/book/type-layout
+/*---------------------------------------------------------------------*/
+
+// Change the Neat grid settings
+$column: 53px;
+$gutter: 16px;
+$grid-columns: 12;
+$max-width: 960px;
+
+// custom breakpoints
+$breakpoint-smartphone-max-width: 640px;
+$breakpoint-tablet-portrait-max-width: 768px;
+$breakpoint-tablet-landscape-min-width: $breakpoint-tablet-portrait-max-width + 1px;
+$breakpoint-tablet-max-width: 1000px;
+

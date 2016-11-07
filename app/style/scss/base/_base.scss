@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------------*/
+/*  Base rules not using classes, just standard HTML elements
+/*  Only use for the most basic, generic rules as classes are more eficient for anything specific
+/*  Guidelines: https://smacss.com/book/type-base
+/*---------------------------------------------------------------------*/
+
+body,
+p {
+  color: $text-color;
+  margin: $standard-text-margin 0;
+  font-size: $standard-text-size;
+}
+
+a {
+  text-decoration: none;
+  color: $links-text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headings-text-color;
+}
+
+li {
+  list-style: none;
+}
+
+li > a {
+  display: block;
+}

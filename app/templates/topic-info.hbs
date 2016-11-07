@@ -1,0 +1,8 @@
+<section class="topic-info">
+  <p class="topic-info-title">Information on topic: {{label}}</p>
+  <p class="topic-info-total-mentions">Total mentions: {{volume}}</p>
+  {{!-- {{MM !Warning! backbone nestify plugin (to enable nested models and collections) is a bit buggy. Handlebars reads backbone nestified objects as plain objects, so we need to include the backbone wrappers 'models', 'attributes' and such!}} --}}
+  <p class="topic-info-sentiment-count">Positive mentions: <span class="sentiment-positive">{{sentiment.attributes.positive}}</span></p>
+  <p class="topic-info-sentiment-count">Neutral mentions: {{sentiment.attributes.neutral}}</p>
+  <p class="topic-info-sentiment-count">Negative mentions: <span class="sentiment-negative">{{sentiment.attributes.negative}}</span></p>
+</section>

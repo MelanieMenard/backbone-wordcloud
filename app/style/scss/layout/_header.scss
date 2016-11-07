@@ -1,0 +1,12 @@
+/*---------------------------------------------------------------------*/
+/*  Header layout SASS file
+/*  Guidelines: https://smacss.com/book/type-layout
+/*---------------------------------------------------------------------*/
+
+#header {
+	@include outer-container;
+}
+
+.header-inner {
+	padding: $standard-container-padding;
+}

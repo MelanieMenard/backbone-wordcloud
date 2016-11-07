@@ -1,0 +1,56 @@
+/*---------------------------------------------------------------------*/
+/*  Topic Cloud SASS file
+/*---------------------------------------------------------------------*/
+
+.topic-cloud {
+  padding: $standard-container-padding;
+  text-align: center;
+}
+
+.topic-item {
+  display: inline-block;
+}
+
+.topic-select {
+  cursor: pointer;
+}
+
+.topic-name {
+
+  display: inline-block;
+
+  &.is-selected {
+    text-decoration: underline;
+  }
+
+  // sentiment color mix shared between word cloud and topic info
+  @include sentiment-color();
+
+  &.popularity-1 {
+    font-size: $standard-text-size - 3px;
+    padding: 2px 3px;
+  }
+  &.popularity-2 {
+    font-size: $standard-text-size;
+    padding: 4px 6px;
+  }
+  &.popularity-3 {
+    font-size: $standard-text-size + 3px;
+    padding: 6px 9px;
+  }
+  &.popularity-4 {
+    font-size: $standard-text-size + 6px;
+    padding: 8px 12px;
+  }
+  &.popularity-5 {
+    font-size: $standard-text-size + 9px;
+    padding: 10px 15px;
+  }
+  &.popularity-6 {
+    font-size: $standard-text-size + 12px;
+    padding: 12px 18px;
+  }
+  
+}
+
+

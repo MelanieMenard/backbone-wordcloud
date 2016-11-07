@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------------*/
+/*  SASS variables
+/*  All SASS variables go there except grid settings that go in layout/grid-settings
+/*---------------------------------------------------------------------*/
+
+// Instructions for efficient SASS (for easy change and replace)
+
+// Step 1: define your variables as taken from the designs. Give them easy to understand names.
+
+/* Colours */
+
+$black: #000000;
+$white: #ffffff;
+$gray: #4C4C4C;
+$light-gray: #f0f0f0;
+
+$red: #FF0000;
+$green: #00B233;
+
+$dusty-orange: #f09b32;
+
+$brand_dark: $black;
+$brand_medium: $gray;
+$brand_light: $light-gray;
+
+
+// Step 2: map the 'design' variables to context/usage specific variables.
+// That way you can change a colour/padding in one specific context only just by remapping here.
+// if you use the 'design' variables directly in context, you end up with the same trapping of standard CSS
+// where you have have to look at each occurence of a hex colour manually
+// if you want to change the colour for just one element instead of replace it globally.
+
+
+/* Colour Functional Variables */
+
+$text-color: $gray;
+$headings-text-color: $brand_dark;
+$links-text-color: $gray;
+
+/* Layout Variables */
+
+$standard-container-padding: 15px;
+$standard-text-margin: 15px;
+
+$standard-text-size: 17px;
+
+/* Component Variables */
+
+$alert_colour: $dusty-orange;

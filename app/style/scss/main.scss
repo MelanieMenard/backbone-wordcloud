@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------------*/
+/*  Main SASS file
+/*  Only used to import all the SASS files
+/*---------------------------------------------------------------------*/
+
+// Third party SASS libraries installed via bower
+@import "bourbon";
+@import "neat";
+
+// Base SASS files
+// https://smacss.com/book/type-base
+@import "base/reset";
+@import "base/variables";
+@import "base/base";
+@import "base/typography";
+
+// Helper (shared functions and utilities) SASS files
+@import "helpers/animations";
+@import "helpers/mixins";
+
+// Layout SASS files
+// https://smacss.com/book/type-layout
+@import "layout/grid-settings";
+@import "layout/header";
+@import "layout/main";
+
+// Module specific SASS files
+// https://smacss.com/book/type-module
+@import "modules/brand";
+@import "modules/loading";
+@import "modules/error-notice";
+@import "modules/topic-cloud";
+@import "modules/topic-info";
+
+// Screen specific SASS files
+// We aim to make SASS as resuable and modular as possible
+// so very little should go in there, most rules will be in modules or layout
+// this is only for screen specific oddities
+@import "screens/error";
+

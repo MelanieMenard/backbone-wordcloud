@@ -1,0 +1,19 @@
+/*---------------------------------------------------------------------*/
+/*  Topic Info SASS file
+/*---------------------------------------------------------------------*/
+
+.topic-info {
+  padding: $standard-container-padding; 
+}
+
+.topic-info-sentiment-count {
+  margin: 2px 0;
+
+  span {
+  	// sentiment color mix shared between word cloud and topic info
+  	@include sentiment-color();
+  }
+}
+
+
+

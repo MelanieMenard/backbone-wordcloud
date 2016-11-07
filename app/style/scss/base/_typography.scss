@@ -1,0 +1,17 @@
+/*---------------------------------------------------------------------*/
+/*  Typography
+/*  Include all fonts and define styles
+/*---------------------------------------------------------------------*/
+
+/** Font URLS **/
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+/** Font Variables **/
+$raleway: 'Raleway', sans-serif;
+
+
+/** Font Styles **/
+button, body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: $raleway;
+  font-weight: normal;
+}

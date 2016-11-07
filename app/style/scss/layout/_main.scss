@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------------*/
+/*  Main content layout SASS file
+/*  Guidelines: https://smacss.com/book/type-layout
+/*---------------------------------------------------------------------*/
+
+#main {
+	@include outer-container;
+}
+
+.page-content {
+	// fade in screens as they appear
+	@include fadeIn();
+}
+
+.screen-left {
+  @include span-columns(8);
+  @include omega;
+  @include media(max-width $breakpoint-tablet-portrait-max-width) {
+    @include span-columns(12);
+  }
+}
+
+.screen-right {
+  @include span-columns(4);
+  @include omega;
+  @include media(max-width $breakpoint-tablet-portrait-max-width) {
+    @include span-columns(12);
+  }
+}
