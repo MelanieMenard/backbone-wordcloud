@@ -5,7 +5,7 @@ Data visualisation demo using backbone JS and marionette JS.
 ### How do I get set up? ###
 
 * Install nodeJS if you don't already have it.
-* run 'npm start' in command line. npm will install all the dependencies for you. On mac you may need to run 'sudo npm start' for npm to be allowed to install bower. If it still does not work, please run 'bower install' manually in the command line', then 'sudo npm start' once bower has finished installing.
+* run 'npm start' in command line. npm will install all the dependencies for you. On Windows 'npm start' should work with no trouble. On mac, you may encounter write permission issues. In that case, please do the process manually in 3 steps: 1) run 'sudo npm install' for npm to be allowed to install bower 2) then run 'bower install' (no sudo) 3) then 'sudo npm start' once bower has finished installing. 
 * Visit localhost:8000 in a browser to see the webapp.
 
 
